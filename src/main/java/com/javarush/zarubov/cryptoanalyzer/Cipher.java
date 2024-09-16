@@ -8,6 +8,7 @@ public class Cipher {
         this.alphabet = alphabet;
     }
     public String encrypt(String text, int shift) {
+        text = text.toLowerCase();
         char[] textArr = text.toCharArray();
         int charPosition = 0;
         for (int i = 0; i < textArr.length; i++) {
@@ -29,6 +30,7 @@ public class Cipher {
         return String.valueOf(textArr);
     }
     public String decrypt(String encryptedText, int shift) {
+        encryptedText = encryptedText.toLowerCase();
         char[] textArr = encryptedText.toCharArray();
         int charPosition = 0;
         for (int i = 0; i < textArr.length; i++) {

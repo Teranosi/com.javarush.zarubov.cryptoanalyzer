@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 public class Validator {
     public static boolean isValidKey(String key, char[] alphabet) {
         try {
-            if (alphabet.length == Integer.parseInt(key) || Integer.parseInt(key) == 0 || key.isBlank() || Integer.parseInt(key) >= 40) {
+            if (alphabet.length == Integer.parseInt(key) || Integer.parseInt(key) == 0 || key.isBlank()) {
                 return false;
             }
         } catch (NumberFormatException exception) {
